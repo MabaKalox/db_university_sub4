@@ -1,0 +1,9 @@
+version: "3"
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - SA_PASSWORD=qMPsf7gqJzrdNtdjN
+      - ACCEPT_EULA=Y
+    ports:
+      - "5433:1433"

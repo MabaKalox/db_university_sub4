@@ -1,0 +1,1978 @@
+{
+  "d": [
+    [
+      "Maskavas iela",
+      "Riga",
+      "387",
+      "Latvia",
+      68,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Biķernieku iela",
+      "Riga",
+      "280",
+      "Latvia",
+      84,
+      "Riga",
+      "LV-1079"
+    ],
+    [
+      "Gaujas iela",
+      "Riga",
+      "29",
+      "Latvia",
+      126,
+      "Riga",
+      "LV-1026"
+    ],
+    [
+      "Dārziņu 19. līnija",
+      "Riga",
+      "59",
+      "Latvia",
+      97,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Sinoles iela",
+      "Riga",
+      "8",
+      "Latvia",
+      114,
+      "Riga",
+      "LV-1079"
+    ],
+    [
+      "Ojāra Vācieša iela",
+      "Riga",
+      "61",
+      "Latvia",
+      68,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Trikātas iela",
+      "Riga",
+      "5",
+      "Latvia",
+      27,
+      "Riga",
+      "LV-1026"
+    ],
+    [
+      "Maskavas iela",
+      "Riga",
+      "291B",
+      "Latvia",
+      70,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Dubultu iela",
+      "Riga",
+      "21",
+      "Latvia",
+      33,
+      "Riga",
+      "LV-1029"
+    ],
+    [
+      "Kalēju iela",
+      "Riga",
+      "23",
+      "Latvia",
+      52,
+      "Riga",
+      "LV-1050"
+    ],
+    [
+      "Sēlpils iela",
+      "Riga",
+      "6A",
+      "Latvia",
+      78,
+      "Riga",
+      "LV-1007"
+    ],
+    [
+      "Lielvārdes iela",
+      "Riga",
+      "60",
+      "Latvia",
+      24,
+      "Riga",
+      "LV-1006"
+    ],
+    [
+      "Aizsila iela",
+      "Riga",
+      "9",
+      "Latvia",
+      63,
+      "Riga",
+      "LV-1006"
+    ],
+    [
+      "Ielejas iela",
+      "Riga",
+      "44",
+      "Latvia",
+      116,
+      "Riga",
+      "LV-1016"
+    ],
+    [
+      "Čiekurkalna 1. līnija",
+      "Riga",
+      "25B",
+      "Latvia",
+      38,
+      "Riga",
+      "LV-1026"
+    ],
+    [
+      "Atpūtas iela",
+      "Riga",
+      "2B",
+      "Latvia",
+      2,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Marijas iela",
+      "Riga",
+      "14",
+      "Latvia",
+      15,
+      "Riga",
+      "LV-1011"
+    ],
+    [
+      "Stopiņu iela",
+      "Riga",
+      "21A",
+      "Latvia",
+      2,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Salnas iela",
+      "Riga",
+      "4",
+      "Latvia",
+      45,
+      "Riga",
+      "LV-1021"
+    ],
+    [
+      "Gaujas iela",
+      "Riga",
+      "28A",
+      "Latvia",
+      89,
+      "Riga",
+      "LV-1026"
+    ],
+    [
+      "Atgāzenes iela",
+      "Riga",
+      "5",
+      "Latvia",
+      59,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Aizkraukles iela",
+      "Riga",
+      "15",
+      "Latvia",
+      38,
+      "Riga",
+      "LV-1006"
+    ],
+    [
+      "Brūžu iela",
+      "Riga",
+      "19",
+      "Latvia",
+      17,
+      "Riga",
+      "LV-1016"
+    ],
+    [
+      "Bauskas iela",
+      "Riga",
+      "166B",
+      "Latvia",
+      80,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Bukas iela",
+      "Riga",
+      "3",
+      "Latvia",
+      31,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Beberbeķu iela",
+      "Riga",
+      "18",
+      "Latvia",
+      71,
+      "Riga",
+      "LV-1029"
+    ],
+    [
+      "Penkules iela",
+      "Riga",
+      "31",
+      "Latvia",
+      43,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Tvaika iela",
+      "Riga",
+      "2 k-3",
+      "Latvia",
+      57,
+      "Riga",
+      "LV-1005"
+    ],
+    [
+      "Sniķeres iela",
+      "Riga",
+      "19",
+      "Latvia",
+      3,
+      "Riga",
+      "LV-1067"
+    ],
+    [
+      "Buru iela",
+      "Riga",
+      "13A",
+      "Latvia",
+      32,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Kārsavas iela",
+      "Riga",
+      "12",
+      "Latvia",
+      109,
+      "Riga",
+      "LV-1082"
+    ],
+    [
+      "Saulgožu iela",
+      "Riga",
+      "18",
+      "Latvia",
+      31,
+      "Riga",
+      "LV-1055"
+    ],
+    [
+      "Mellužu iela",
+      "Riga",
+      "17",
+      "Latvia",
+      36,
+      "Riga",
+      "LV-1067"
+    ],
+    [
+      "Maskavas iela",
+      "Riga",
+      "257B",
+      "Latvia",
+      47,
+      "Riga",
+      "LV-1019"
+    ],
+    [
+      "Āgenskalna iela",
+      "Riga",
+      "13",
+      "Latvia",
+      7,
+      "Riga",
+      "LV-1048"
+    ],
+    [
+      "Purvciema iela",
+      "Riga",
+      "3",
+      "Latvia",
+      82,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Krosa iela",
+      "Riga",
+      "15",
+      "Latvia",
+      72,
+      "Riga",
+      "LV-1024"
+    ],
+    [
+      "Baltā iela",
+      "Riga",
+      "3",
+      "Latvia",
+      18,
+      "Riga",
+      "LV-1055"
+    ],
+    [
+      "Krūzes iela",
+      "Riga",
+      "34E",
+      "Latvia",
+      79,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Pūces iela",
+      "Riga",
+      "27 k-1",
+      "Latvia",
+      105,
+      "Riga",
+      "LV-1082"
+    ],
+    [
+      "Purvciema iela",
+      "Riga",
+      "49B",
+      "Latvia",
+      113,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Saulgožu iela",
+      "Riga",
+      "18",
+      "Latvia",
+      75,
+      "Riga",
+      "LV-1055"
+    ],
+    [
+      "Jūrmalas gatve",
+      "Riga",
+      "76 k-3",
+      "Latvia",
+      124,
+      "Riga",
+      "LV-1083"
+    ],
+    [
+      "Atpūtas iela",
+      "Riga",
+      "14",
+      "Latvia",
+      120,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Ratnieku iela",
+      "Riga",
+      "5",
+      "Latvia",
+      65,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Daibes iela",
+      "Riga",
+      "6B",
+      "Latvia",
+      29,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Kvadrāta iela",
+      "Riga",
+      "10",
+      "Latvia",
+      41,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Pīkola iela",
+      "Riga",
+      "25",
+      "Latvia",
+      35,
+      "Riga",
+      "LV-1006"
+    ],
+    [
+      "Darba iela",
+      "Riga",
+      "4",
+      "Latvia",
+      85,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Staburaga iela",
+      "Riga",
+      "8",
+      "Latvia",
+      83,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Kalnciema iela",
+      "Riga",
+      "39C",
+      "Latvia",
+      9,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Tallinas iela",
+      "Riga",
+      "15B",
+      "Latvia",
+      70,
+      "Riga",
+      "LV-1001"
+    ],
+    [
+      "Pulkveža Brieža iela",
+      "Riga",
+      "27",
+      "Latvia",
+      104,
+      "Riga",
+      "LV-1045"
+    ],
+    [
+      "Gobas iela",
+      "Riga",
+      "20 k-2",
+      "Latvia",
+      126,
+      "Riga",
+      "LV-1016"
+    ],
+    [
+      "Putnu iela",
+      "Riga",
+      "42",
+      "Latvia",
+      58,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Dārziņu 43. līnija",
+      "Riga",
+      "10",
+      "Latvia",
+      113,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Gunāra Astras iela",
+      "Riga",
+      "1C",
+      "Latvia",
+      66,
+      "Riga",
+      "LV-1084"
+    ],
+    [
+      "Upesciema iela",
+      "Riga",
+      "66",
+      "Latvia",
+      50,
+      "Riga",
+      "LV-1024"
+    ],
+    [
+      "Kantora iela",
+      "Riga",
+      "20",
+      "Latvia",
+      108,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Paula Lejiņa iela",
+      "Riga",
+      "12",
+      "Latvia",
+      110,
+      "Riga",
+      "LV-1029"
+    ],
+    [
+      "Graudu iela",
+      "Riga",
+      "33A",
+      "Latvia",
+      29,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Zeltiņu iela",
+      "Riga",
+      "56",
+      "Latvia",
+      45,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Riharda Vāgnera iela",
+      "Riga",
+      "20",
+      "Latvia",
+      21,
+      "Riga",
+      "LV-1050"
+    ],
+    [
+      "Baltāsbaznīcas iela",
+      "Riga",
+      "33",
+      "Latvia",
+      68,
+      "Riga",
+      "LV-1015"
+    ],
+    [
+      "Barkavas iela",
+      "Riga",
+      "2",
+      "Latvia",
+      28,
+      "Riga",
+      "LV-1082"
+    ],
+    [
+      "Dauguļu iela",
+      "Riga",
+      "44",
+      "Latvia",
+      40,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Ineša iela",
+      "Riga",
+      "8",
+      "Latvia",
+      95,
+      "Riga",
+      "LV-1064"
+    ],
+    [
+      "Saktas iela",
+      "Riga",
+      "20",
+      "Latvia",
+      78,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Sīpeles iela",
+      "Riga",
+      "13B",
+      "Latvia",
+      null,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Mežciema iela",
+      "Riga",
+      "43A",
+      "Latvia",
+      26,
+      "Riga",
+      "LV-1079"
+    ],
+    [
+      "Riekstu iela",
+      "Riga",
+      "16",
+      "Latvia",
+      102,
+      "Riga",
+      "LV-1055"
+    ],
+    [
+      "Mazjumpravas iela",
+      "Riga",
+      "22A",
+      "Latvia",
+      null,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Purvciema iela",
+      "Riga",
+      "14",
+      "Latvia",
+      119,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Maskavas iela",
+      "Riga",
+      "267A",
+      "Latvia",
+      89,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Beberbeķu 6. līnija",
+      "Riga",
+      "5L",
+      "Latvia",
+      100,
+      "Riga",
+      "LV-1029"
+    ],
+    [
+      "Dārziņu 34. līnija",
+      "Riga",
+      "23",
+      "Latvia",
+      15,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Dārzciema iela",
+      "Riga",
+      "29",
+      "Latvia",
+      118,
+      "Riga",
+      "LV-1082"
+    ],
+    [
+      "Konsula iela",
+      "Riga",
+      "3",
+      "Latvia",
+      2,
+      "Riga",
+      "LV-1007"
+    ],
+    [
+      "Daugavpils iela",
+      "Riga",
+      "3",
+      "Latvia",
+      66,
+      "Riga",
+      "LV-1003"
+    ],
+    [
+      "Trijādības iela",
+      "Riga",
+      "1",
+      "Latvia",
+      62,
+      "Riga",
+      "LV-1048"
+    ],
+    [
+      "Ernestīnes iela",
+      "Riga",
+      "20",
+      "Latvia",
+      100,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Kaņiera iela",
+      "Riga",
+      "11",
+      "Latvia",
+      115,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Nometņu iela",
+      "Riga",
+      "40",
+      "Latvia",
+      65,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Lorupes iela",
+      "Riga",
+      "6A",
+      "Latvia",
+      31,
+      "Riga",
+      "LV-1064"
+    ],
+    [
+      "Varžu iela",
+      "Riga",
+      "9",
+      "Latvia",
+      122,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Zilupes iela",
+      "Riga",
+      "35",
+      "Latvia",
+      13,
+      "Riga",
+      "LV-1019"
+    ],
+    [
+      "Krustpils iela",
+      "Riga",
+      "12A",
+      "Latvia",
+      96,
+      "Riga",
+      "LV-1073"
+    ],
+    [
+      "Dobeles iela",
+      "Riga",
+      "4",
+      "Latvia",
+      111,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Aizsila iela",
+      "Riga",
+      "20",
+      "Latvia",
+      5,
+      "Riga",
+      "LV-1006"
+    ],
+    [
+      "Ķeguma iela",
+      "Riga",
+      "68",
+      "Latvia",
+      13,
+      "Riga",
+      "LV-1084"
+    ],
+    [
+      "Airu iela",
+      "Riga",
+      "97",
+      "Latvia",
+      28,
+      "Riga",
+      "LV-1015"
+    ],
+    [
+      "Strautu iela",
+      "Riga",
+      "47A",
+      "Latvia",
+      88,
+      "Riga",
+      "LV-1073"
+    ],
+    [
+      "Jūrkalnes iela",
+      "Riga",
+      "9",
+      "Latvia",
+      69,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Bramberģes iela",
+      "Riga",
+      "17",
+      "Latvia",
+      71,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Zušu iela",
+      "Riga",
+      "27",
+      "Latvia",
+      66,
+      "Riga",
+      "LV-1034"
+    ],
+    [
+      "Zolitūdes iela",
+      "Riga",
+      "37",
+      "Latvia",
+      24,
+      "Riga",
+      "LV-1029"
+    ],
+    [
+      "Augusta Deglava iela",
+      "Riga",
+      "8",
+      "Latvia",
+      9,
+      "Riga",
+      "LV-1009"
+    ],
+    [
+      "Maskavas iela",
+      "Riga",
+      "258 k-4",
+      "Latvia",
+      30,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Stabu iela",
+      "Riga",
+      "15",
+      "Latvia",
+      94,
+      "Riga",
+      "LV-1010"
+    ],
+    [
+      "Sējas iela",
+      "Riga",
+      "59",
+      "Latvia",
+      42,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Kalvenes iela",
+      "Riga",
+      "41",
+      "Latvia",
+      75,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Starta iela",
+      "Riga",
+      "46",
+      "Latvia",
+      45,
+      "Riga",
+      "LV-1039"
+    ],
+    [
+      "Jāņa Grestes iela",
+      "Riga",
+      "14",
+      "Latvia",
+      null,
+      "Riga",
+      "LV-1021"
+    ],
+    [
+      "Mazā Vējzaķsala",
+      "Riga",
+      "37A",
+      "Latvia",
+      89,
+      "Riga",
+      "LV-1045"
+    ],
+    [
+      "Kalnciema iela",
+      "Riga",
+      "31",
+      "Latvia",
+      30,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Zemgaļu iela",
+      "Riga",
+      "19",
+      "Latvia",
+      91,
+      "Riga",
+      "LV-1006"
+    ],
+    [
+      "Vējavas iela",
+      "Riga",
+      "7",
+      "Latvia",
+      37,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Kastrānes iela",
+      "Riga",
+      "5A",
+      "Latvia",
+      52,
+      "Riga",
+      "LV-1084"
+    ],
+    [
+      "Jūrmalas gatve",
+      "Riga",
+      "1",
+      "Latvia",
+      113,
+      "Riga",
+      "LV-1007"
+    ],
+    [
+      "Krūzes iela",
+      "Riga",
+      "49",
+      "Latvia",
+      105,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Paltmales iela",
+      "Riga",
+      "20",
+      "Latvia",
+      104,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Jaunciema 4. līnija",
+      "Riga",
+      "59",
+      "Latvia",
+      3,
+      "Riga",
+      "LV-1023"
+    ],
+    [
+      "Lienes iela",
+      "Riga",
+      "10",
+      "Latvia",
+      40,
+      "Riga",
+      "LV-1009"
+    ],
+    [
+      "Dzegužu iela",
+      "Riga",
+      "20",
+      "Latvia",
+      128,
+      "Riga",
+      "LV-1007"
+    ],
+    [
+      "Indriķa iela",
+      "Riga",
+      "10A",
+      "Latvia",
+      29,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Putnu iela",
+      "Riga",
+      "59",
+      "Latvia",
+      107,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Cidoniju iela",
+      "Riga",
+      "38",
+      "Latvia",
+      7,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Ainažu iela",
+      "Riga",
+      "45",
+      "Latvia",
+      117,
+      "Riga",
+      "LV-1024"
+    ],
+    [
+      "Burtnieku iela",
+      "Riga",
+      "33",
+      "Latvia",
+      null,
+      "Riga",
+      "LV-1039"
+    ],
+    [
+      "Zasulauka iela",
+      "Riga",
+      "18",
+      "Latvia",
+      15,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Kristapa iela",
+      "Riga",
+      "7",
+      "Latvia",
+      40,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Lāčplēša iela",
+      "Riga",
+      "37",
+      "Latvia",
+      104,
+      "Riga",
+      "LV-1011"
+    ],
+    [
+      "Mazā Zolitūdes iela",
+      "Riga",
+      "17A",
+      "Latvia",
+      null,
+      "Riga",
+      "LV-1029"
+    ],
+    [
+      "Margrietas iela",
+      "Riga",
+      "7 k-4",
+      "Latvia",
+      29,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Matīsa iela",
+      "Riga",
+      "103",
+      "Latvia",
+      113,
+      "Riga",
+      "LV-1009"
+    ],
+    [
+      "Mēmeles iela",
+      "Riga",
+      "10A",
+      "Latvia",
+      26,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Sējas iela",
+      "Riga",
+      "49B",
+      "Latvia",
+      39,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Jaunelku iela",
+      "Riga",
+      "12",
+      "Latvia",
+      101,
+      "Riga",
+      "LV-1024"
+    ],
+    [
+      "Čiekurkalna 8. šķērslīnija",
+      "Riga",
+      "20",
+      "Latvia",
+      48,
+      "Riga",
+      "LV-1026"
+    ],
+    [
+      "Višķu iela",
+      "Riga",
+      "7",
+      "Latvia",
+      124,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Ulbrokas iela",
+      "Riga",
+      "22",
+      "Latvia",
+      57,
+      "Riga",
+      "LV-1021"
+    ],
+    [
+      "Vēlavu iela",
+      "Riga",
+      "18",
+      "Latvia",
+      118,
+      "Riga",
+      "LV-1030"
+    ],
+    [
+      "Jaunsaimnieku iela",
+      "Riga",
+      "14B",
+      "Latvia",
+      1,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Ielejas iela",
+      "Riga",
+      "2",
+      "Latvia",
+      101,
+      "Riga",
+      "LV-1016"
+    ],
+    [
+      "Ventspils iela",
+      "Riga",
+      "50 k-3",
+      "Latvia",
+      80,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Strenču iela",
+      "Riga",
+      "2",
+      "Latvia",
+      57,
+      "Riga",
+      "LV-1009"
+    ],
+    [
+      "Lieģu iela",
+      "Riga",
+      "8",
+      "Latvia",
+      99,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Kraukļu iela",
+      "Riga",
+      "19",
+      "Latvia",
+      88,
+      "Riga",
+      "LV-1082"
+    ],
+    [
+      "Codes iela",
+      "Riga",
+      "23",
+      "Latvia",
+      45,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Juglas iela",
+      "Riga",
+      "35",
+      "Latvia",
+      67,
+      "Riga",
+      "LV-1064"
+    ],
+    [
+      "Taisnā iela",
+      "Riga",
+      "74",
+      "Latvia",
+      110,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Cidoniju iela",
+      "Riga",
+      "69",
+      "Latvia",
+      45,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Anniņmuižas bulvāris",
+      "Riga",
+      "44",
+      "Latvia",
+      31,
+      "Riga",
+      "LV-1069"
+    ],
+    [
+      "Dārziņu iela",
+      "Riga",
+      "222",
+      "Latvia",
+      61,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Ūnijas iela",
+      "Riga",
+      "6",
+      "Latvia",
+      32,
+      "Riga",
+      "LV-1084"
+    ],
+    [
+      "Zaļenieku iela",
+      "Riga",
+      "40",
+      "Latvia",
+      30,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Rēzeknes iela",
+      "Riga",
+      "43",
+      "Latvia",
+      31,
+      "Riga",
+      "LV-1073"
+    ],
+    [
+      "Melnsila iela",
+      "Riga",
+      "13",
+      "Latvia",
+      62,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Krūzes iela",
+      "Riga",
+      "3",
+      "Latvia",
+      25,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Nīcgales iela",
+      "Riga",
+      "55",
+      "Latvia",
+      52,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Andreja Saharova iela",
+      "Riga",
+      "20A",
+      "Latvia",
+      98,
+      "Riga",
+      "LV-1021"
+    ],
+    [
+      "Apuzes iela",
+      "Riga",
+      "12",
+      "Latvia",
+      50,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Aizkraukles iela",
+      "Riga",
+      "21",
+      "Latvia",
+      43,
+      "Riga",
+      "LV-1006"
+    ],
+    [
+      "Ķemeru iela",
+      "Riga",
+      "11A",
+      "Latvia",
+      null,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Bišu iela",
+      "Riga",
+      "11",
+      "Latvia",
+      14,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Dārziņu 25. līnija",
+      "Riga",
+      "43",
+      "Latvia",
+      100,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Braila iela",
+      "Riga",
+      "23",
+      "Latvia",
+      31,
+      "Riga",
+      "LV-1024"
+    ],
+    [
+      "Ābeļu iela",
+      "Riga",
+      "17",
+      "Latvia",
+      42,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Priežu iela",
+      "Riga",
+      "2",
+      "Latvia",
+      48,
+      "Riga",
+      "LV-1005"
+    ],
+    [
+      "Indriķa iela",
+      "Riga",
+      "4A",
+      "Latvia",
+      16,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Apmetņu iela",
+      "Riga",
+      "9",
+      "Latvia",
+      1,
+      "Riga",
+      "LV-1073"
+    ],
+    [
+      "Stērstu iela",
+      "Riga",
+      "9",
+      "Latvia",
+      18,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Raktes iela",
+      "Riga",
+      "33",
+      "Latvia",
+      128,
+      "Riga",
+      "LV-1067"
+    ],
+    [
+      "Zalves iela",
+      "Riga",
+      "46A",
+      "Latvia",
+      104,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Raktes iela",
+      "Riga",
+      "36",
+      "Latvia",
+      30,
+      "Riga",
+      "LV-1067"
+    ],
+    [
+      "Zeltiņu iela",
+      "Riga",
+      "17",
+      "Latvia",
+      49,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Dārziņu 18. līnija",
+      "Riga",
+      "58",
+      "Latvia",
+      117,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Dauguļu iela",
+      "Riga",
+      "62B",
+      "Latvia",
+      96,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Traleru iela",
+      "Riga",
+      "19",
+      "Latvia",
+      73,
+      "Riga",
+      "LV-1030"
+    ],
+    [
+      "Tadaiķu iela",
+      "Riga",
+      "9",
+      "Latvia",
+      15,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Viestura prospekts",
+      "Riga",
+      "87",
+      "Latvia",
+      112,
+      "Riga",
+      "LV-1005"
+    ],
+    [
+      "Meteora iela",
+      "Riga",
+      "14",
+      "Latvia",
+      79,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Dārziņu 22. līnija",
+      "Riga",
+      "12",
+      "Latvia",
+      26,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Elizabetes iela",
+      "Riga",
+      "55",
+      "Latvia",
+      35,
+      "Riga",
+      "LV-1010"
+    ],
+    [
+      "Dzelzavas iela",
+      "Riga",
+      "79",
+      "Latvia",
+      117,
+      "Riga",
+      "LV-1084"
+    ],
+    [
+      "Basu iela",
+      "Riga",
+      "1E",
+      "Latvia",
+      102,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Rencēnu iela",
+      "Riga",
+      "41A",
+      "Latvia",
+      null,
+      "Riga",
+      "LV-1073"
+    ],
+    [
+      "Jūrkalnes iela",
+      "Riga",
+      "2A",
+      "Latvia",
+      70,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Jēkabpils iela",
+      "Riga",
+      "22",
+      "Latvia",
+      74,
+      "Riga",
+      "LV-1003"
+    ],
+    [
+      "Jaunciema 5. šķērslīnija",
+      "Riga",
+      "2A",
+      "Latvia",
+      86,
+      "Riga",
+      "LV-1023"
+    ],
+    [
+      "Meža prospekts",
+      "Riga",
+      "1",
+      "Latvia",
+      100,
+      "Riga",
+      "LV-1014"
+    ],
+    [
+      "Vienības gatve",
+      "Riga",
+      "119",
+      "Latvia",
+      92,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Dzērbenes iela",
+      "Riga",
+      "18",
+      "Latvia",
+      70,
+      "Riga",
+      "LV-1006"
+    ],
+    [
+      "Nīcgales iela",
+      "Riga",
+      "14",
+      "Latvia",
+      102,
+      "Riga",
+      "LV-1035"
+    ],
+    [
+      "Sniķeres iela",
+      "Riga",
+      "14",
+      "Latvia",
+      125,
+      "Riga",
+      "LV-1067"
+    ],
+    [
+      "Zvaigžņu iela",
+      "Riga",
+      "5A",
+      "Latvia",
+      47,
+      "Riga",
+      "LV-1009"
+    ],
+    [
+      "Kalnciema iela",
+      "Riga",
+      "87",
+      "Latvia",
+      61,
+      "Riga",
+      "LV-1046"
+    ],
+    [
+      "Kāvu iela",
+      "Riga",
+      "5",
+      "Latvia",
+      21,
+      "Riga",
+      "LV-1015"
+    ],
+    [
+      "Zeļļu iela",
+      "Riga",
+      "23",
+      "Latvia",
+      92,
+      "Riga",
+      "LV-1002"
+    ],
+    [
+      "Aizupes iela",
+      "Riga",
+      "13",
+      "Latvia",
+      5,
+      "Riga",
+      "LV-1004"
+    ],
+    [
+      "Sējas iela",
+      "Riga",
+      "47",
+      "Latvia",
+      51,
+      "Riga",
+      "LV-1058"
+    ],
+    [
+      "Aiviekstes iela",
+      "Riga",
+      "5A",
+      "Latvia",
+      122,
+      "Riga",
+      "LV-1019"
+    ],
+    [
+      "Bumbieru iela",
+      "Riga",
+      "2A",
+      "Latvia",
+      94,
+      "Riga",
+      "LV-1007"
+    ],
+    [
+      "Teteru iela",
+      "Riga",
+      "7",
+      "Latvia",
+      53,
+      "Riga",
+      "LV-1084"
+    ],
+    [
+      "Imantas 8. līnija",
+      "Riga",
+      "10",
+      "Latvia",
+      110,
+      "Riga",
+      "LV-1083"
+    ],
+    [
+      "Dārziņu 44. līnija",
+      "Riga",
+      "7",
+      "Latvia",
+      119,
+      "Riga",
+      "LV-1063"
+    ],
+    [
+      "Dzintara iela",
+      "Riga",
+      "105",
+      "Latvia",
+      44,
+      "Riga",
+      "LV-1016"
+    ],
+    [
+      "Labraga iela",
+      "Riga",
+      "35",
+      "Latvia",
+      119,
+      "Riga",
+      "LV-1029"
+    ],
+    [
+      "Ieriķu iela",
+      "Riga",
+      "39",
+      "Latvia",
+      83,
+      "Riga",
+      "LV-1084"
+    ],
+    [
+      "Dārziņu 22. līnija",
+      "Riga",
+      "20",
+      "Latvia",
+      42,
+      "Riga",
+      "LV-1063"
+    ]
+  ],
+  "a": [
+    [
+      1,
+      "LV-1001"
+    ],
+    [
+      2,
+      "LV-1002"
+    ],
+    [
+      3,
+      "LV-1003"
+    ],
+    [
+      4,
+      "LV-1004"
+    ],
+    [
+      5,
+      "LV-1005"
+    ],
+    [
+      6,
+      "LV-1006"
+    ],
+    [
+      7,
+      "LV-1007"
+    ],
+    [
+      8,
+      "LV-1009"
+    ],
+    [
+      9,
+      "LV-1010"
+    ],
+    [
+      10,
+      "LV-1011"
+    ],
+    [
+      11,
+      "LV-1012"
+    ],
+    [
+      12,
+      "LV-1013"
+    ],
+    [
+      13,
+      "LV-1014"
+    ],
+    [
+      14,
+      "LV-1015"
+    ],
+    [
+      15,
+      "LV-1016"
+    ],
+    [
+      16,
+      "LV-1019"
+    ],
+    [
+      17,
+      "LV-1021"
+    ],
+    [
+      18,
+      "LV-1023"
+    ],
+    [
+      19,
+      "LV-1024"
+    ],
+    [
+      20,
+      "LV-1026"
+    ],
+    [
+      21,
+      "LV-1029"
+    ],
+    [
+      22,
+      "LV-1030"
+    ],
+    [
+      23,
+      "LV-1034"
+    ],
+    [
+      24,
+      "LV-1035"
+    ],
+    [
+      25,
+      "LV-1038"
+    ],
+    [
+      26,
+      "LV-1039"
+    ],
+    [
+      27,
+      "LV-1045"
+    ],
+    [
+      28,
+      "LV-1046"
+    ],
+    [
+      29,
+      "LV-1048"
+    ],
+    [
+      30,
+      "LV-1050"
+    ],
+    [
+      31,
+      "LV-1055"
+    ],
+    [
+      32,
+      "LV-1057"
+    ],
+    [
+      33,
+      "LV-1058"
+    ],
+    [
+      34,
+      "LV-1063"
+    ],
+    [
+      35,
+      "LV-1064"
+    ],
+    [
+      36,
+      "LV-1067"
+    ],
+    [
+      37,
+      "LV-1069"
+    ],
+    [
+      38,
+      "LV-1073"
+    ],
+    [
+      39,
+      "LV-1076"
+    ],
+    [
+      40,
+      "LV-1079"
+    ],
+    [
+      41,
+      "LV-1082"
+    ],
+    [
+      42,
+      "LV-1083"
+    ],
+    [
+      43,
+      "LV-1084"
+    ]
+  ]
+}

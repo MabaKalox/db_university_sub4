@@ -148,7 +148,7 @@ CREATE TABLE Courses
 (
     course_id        int IDENTITY (1, 1) PRIMARY KEY,
     name             varchar(255) NOT NULL,
-    description      varchar(255) NOT NULL,
+    description      nvarchar(2048) NOT NULL,
     course_mentor_id int          NOT NULL,
     CONSTRAINT FK_course_mentor_id FOREIGN KEY (course_mentor_id)
         REFERENCES CourseMentors (course_mentor_id)
@@ -175,7 +175,7 @@ CREATE TABLE Subjects
 (
     subject_id  int IDENTITY (1, 1) PRIMARY KEY,
     name        varchar(255) NOT NULL UNIQUE,
-    description varchar(255)
+    description nvarchar(1024)
 )
 
 --It is Only for some special cases when student takes

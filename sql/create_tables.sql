@@ -228,10 +228,10 @@ CREATE TABLE professor_subject_relationships
 CREATE TABLE Lessons
 (
     lesson_id      int identity (1,1) PRIMARY KEY,
-    purpose        varchar(120) NOT NULL,
+    purpose        nvarchar(240) NOT NULL,
     start_datetime datetime     NOT NULL,
     end_datetime   datetime     NOT NULL,
-    location       varchar(50)  NOT NULL,
+    location       nvarchar(128)  NOT NULL,
     record         varchar(128),
     subject_id     int          NOT NULL,
     CONSTRAINT FK_subject_id_3 FOREIGN KEY (subject_id)
@@ -266,7 +266,7 @@ CREATE TABLE student_lesson_relationships
 CREATE TABLE Tasks
 (
     task_id          int IDENTITY (1, 1) PRIMARY KEY,
-    description      varchar(2048) NOT NULL,
+    description      nvarchar(2048) NOT NULL,
     time_of_creating datetime      NOT NULL,
     deadline         datetime,
     is_visible       bit DEFAULT 0,
@@ -284,8 +284,8 @@ CREATE TABLE Submissions
     submission_time   datetime NOT NULL,
     grading_time      datetime,
     grade             tinyint,
-    student_comment   varchar(320),
-    professor_comment varchar(320),
+    student_comment   nvarchar(320),
+    professor_comment nvarchar(320),
 
     task_id           int      NOT NULL,
     CONSTRAINT FK_task_id FOREIGN KEY (task_id)
@@ -303,7 +303,7 @@ CREATE TABLE Submissions
 CREATE TABLE Files
 (
     file_id       int IDENTITY (1, 1) PRIMARY KEY,
-    original_name varchar(255) NOT NULL,
+    original_name nvarchar(255) NOT NULL,
     saved_path    varchar(255) NOT NULL,
     timestamp     timestamp    NOT NULL,
 

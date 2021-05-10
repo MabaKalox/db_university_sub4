@@ -35,19 +35,34 @@ def format_output(_data):
 with open("../source_data.json", "r") as file:
     data = json.loads(file.read())
 
+
 output = []
-for i in range(1, 73):
-    for _ in range(random.randint(1, 3)):
-        create_time = datetime.datetime(random.randint(2012, 2021),
-                                        random.randint(1, 12),
-                                        random.randint(1, 28),
-                                        random.randint(7, 23),
-                                        random.randint(1, 59),
-                                        random.randint(1, 59))
-        deadline_time = create_time + datetime.timedelta(random.randint(1, 60))
-        output.append(
-            (random.choice(data), create_time.isoformat(), deadline_time.isoformat(),
-             0 if random.randint(1, 100) <= 40 else 1, i)
-        )
+for row in data:
+    row[0] = int(row[0])
+    row[1] = int(row[1])
+    row[4] = int(row[4])
+    fixed = row[2].split(":")
+    if int(fixed[-1]) > 59:
+        fixed[-1] = str(random.randint(1, 59))
+    if int(fixed[-2]) > 59:
+        fixed[-2] = str(random.randint(1, 59))
+    row[2] = ":".join(fixed)
+    fixed = row[3].split(":")
+    if int(fixed[-1]) > 59:
+        fixed[-1] = str(random.randint(1, 59))
+    if int(fixed[-2]) > 59:
+        fixed[-2] = str(random.randint(1, 59))
+    row[3] = ":".join(fixed)
+    try:
+        parsed1 = datetime.datetime.fromisoformat(row[3])
+        parsed2 = datetime.datetime.fromisoformat(row[2])
+    except:
+        print(row[3])
+        print(row[2])
+        continue
+    if random.randint(1, 100) < 40:
+        row[3] = None
+        row[-1] = None
+    output.append(row)
 
 print(format_output(output))

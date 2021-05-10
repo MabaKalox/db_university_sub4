@@ -38,12 +38,12 @@ CREATE TABLE PostalCodes
 CREATE TABLE Addresses
 (
     address_id int IDENTITY (1, 1) PRIMARY KEY,
-    street     varchar(120) NOT NULL,
-    city       varchar(50)  NULL,
-    house_num  varchar(12)  NOT NULL,
-    country    varchar(30)  NOT NULL,
+    street     nvarchar(120) NOT NULL,
+    city       nvarchar(50)  NULL,
+    house_num  nvarchar(12)  NOT NULL,
+    country    nvarchar(30)  NOT NULL,
     flat_num   int,
-    state      varchar(30),
+    state      nvarchar(30),
     postal_id  int          NOT NULL,
     CONSTRAINT FK_postal_id FOREIGN KEY (postal_id)
         REFERENCES PostalCodes (postal_id)
@@ -71,7 +71,7 @@ CREATE TABLE Hobbies
 (
     hobby_id    int IDENTITY (1, 1) PRIMARY KEY,
     name        varchar(40) NOT NULL,
-    description varchar(120)
+    description varchar(420)
 )
 
 CREATE TABLE user_hobby_relationships
@@ -126,7 +126,7 @@ CREATE TABLE Students
     student_id int identity (1,1) PRIMARY KEY,
     study_year TINYINT NOT NULL,
     is_active  bit DEFAULT 0,
-    user_id    int     NOT NULL,
+    user_id    int     NOT NULL UNIQUE ,
     CONSTRAINT FK_user_id_2 FOREIGN KEY (user_id)
         REFERENCES Users (user_id)
         ON DELETE CASCADE

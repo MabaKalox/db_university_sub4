@@ -3534,6 +3534,7 @@ VALUES ('2020-01-07T12:42:06', 82, 121),
 
 INSERT INTO Submissions (submission_time, grading_time, grade, student_comment, professor_comment, task_id, student_id)
 VALUES ('2018-04-19 20:24:45.000', null, null, 'Plz help me', null, 127, 6),
+       ('2018-04-19 20:23:45.000', '2018-04-19 20:23:59.000', 10, 'Here is submission', 'Good job.', 126, 6),
        ('2018-05-22 14:39:18.000', null, null, 'Plz help me', null, 101, 32),
        ('2017-01-19 20:57:55.000', null, null, 'Plz help me', null, 99, 7),
        ('2017-07-21 21:48:23.000', '2017-07-22 21:48:30.000', 8, 'Plz help me', 'Well yo tryd', 18, 49),

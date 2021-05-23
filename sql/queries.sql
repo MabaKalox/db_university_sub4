@@ -18,8 +18,10 @@ SELECT Users.name,
        Users.surname,
        Submissions.grading_time,
        Submissions.grade,
+       Tasks.description,
        Submissions.student_comment,
-       Submissions.professor_comment
+       Submissions.professor_comment,
+       IIF(Submissions.submission_time <= Tasks.deadline, 1, 0) as isSubmittedInTime
 FROM Students
          INNER JOIN Users ON Students.user_id = Users.user_id
          INNER JOIN Submissions ON Students.student_id = Submissions.student_id
@@ -29,6 +31,7 @@ ORDER BY IIF(Submissions.grade IS NULL, 1, 0),
 
 
 /* Displays the lessons info */
+
 SELECT Users.name    as ProfessorName,
        Users.surname as ProfessorSurname,
        Subjects.name as SubjectName,
@@ -41,9 +44,37 @@ FROM Lessons
          INNER JOIN Users on Professors.user_id = Users.user_id
 
 
-/* Hobbys */
+/* Hobbies */
 
 SELECT Users.name, Users.surname, Hobbies.name, Hobbies.description
 FROM Users
          INNER JOIN user_hobby_relationships ON user_hobby_relationships.user_id = Users.user_id
          INNER JOIN Hobbies ON Hobbies.hobby_id = user_hobby_relationships.hobby_id
+
+-- Get all student subjects
+
+SELECT Students.student_id,
+       CONCAT(U.name, ' ', U.surname) as User_name_surname,
+       C.name                         as student_course,
+       Subjects.name,
+       (
+           SELECT COUNT(*)
+           FROM Lessons
+           WHERE Lessons.subject_id = csr.subject_id
+       )                              as lessons_was,
+       (
+           SELECT COUNT(*)
+           FROM Lessons
+                    INNER JOIN student_lesson_relationships slr on Lessons.lesson_id = slr.lesson_id
+           WHERE Lessons.subject_id = csr.subject_id
+             AND slr.join_datetime < Lessons.end_datetime
+       )                              as was_on_lecture_times
+FROM Students
+         INNER JOIN Users U on Students.user_id = U.user_id
+         INNER JOIN student_course_relationships scr on Students.student_id = scr.student_id
+         INNER JOIN Courses C on scr.course_id = C.course_id
+         INNER JOIN course_subject_relationships csr on C.course_id = csr.course_id
+         LEFT JOIN student_subject_relationships ssr on Students.student_id = ssr.student_id
+         INNER JOIN Subjects on csr.subject_id = Subjects.subject_id OR ssr.subject_id = Subjects.subject_id
+ORDER BY C.name,
+         User_name_surname

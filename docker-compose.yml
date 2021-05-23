@@ -1,7 +1,10 @@
 version: "3"
 services:
   mssql:
-    image: mcr.microsoft.com/mssql/server:2019-latest
+    build:
+      context: .
+      dockerfile: .Dockerfile
+    image: our_database
     environment:
       - SA_PASSWORD=qMPsf7gqJzrdNtdjN
       - ACCEPT_EULA=Y

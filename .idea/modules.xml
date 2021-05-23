@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/mssql-docker.iml" filepath="$PROJECT_DIR$/.idea/mssql-docker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/python_helpers/python_helpers.iml" filepath="$PROJECT_DIR$/python_helpers/python_helpers.iml" />
     </modules>
   </component>
 </project>

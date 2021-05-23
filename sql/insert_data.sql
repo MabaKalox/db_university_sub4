@@ -1,3 +1,5 @@
+use university_db
+
 INSERT INTO PostalCodes (postal_code)
 VALUES ('LV-1001'),
        ('LV-1002'),

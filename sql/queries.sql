@@ -140,12 +140,13 @@ ORDER BY (Courses.course_id);
 
 -- Count Students on Street
 
-SELECT DISTINCT Addresses.street,
+SELECT street_name,
        (
            SELECT COUNT(*)
            FROM Users
            INNER JOIN Addresses A on A.address_id = Users.address_id
-           WHERE A.street = Addresses.street
+           INNER JOIN Streets US on US.street_id = A.street_id
+           WHERE US.street_name = Streets.street_name
            ) as users_count
-FROM Addresses
-ORDER BY users_count DESC;
+FROM Streets
+ORDER BY street_name, users_count DESC;

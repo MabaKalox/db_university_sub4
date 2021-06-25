@@ -4,11 +4,13 @@ SELECT Users.name,
        IIF(P.professor_id IS NOT NULL, 1, 0)      as IsProfessor,
        IIF(S.student_id IS NOT NULL, 1, 0)        as IsStudent,
        IIF(CM.course_mentor_id IS NOT NULL, 1, 0) as IsCourceMentor,
-       Addresses.country,
-       Addresses.city,
-       Addresses.street
+       CONCAT(country_name, ' ', state_name, ' ', city_name, ' ', street_name, ' - ', building_num)
 FROM Users
          INNER JOIN Addresses ON Users.address_id = Addresses.address_id
+         INNER JOIN Streets on Streets.street_id = Addresses.street_id
+         INNER JOIN Cites on Cites.city_id = Streets.city_id
+         INNER JOIN States on States.state_id = Cites.state_id
+         INNER JOIN Countries on Countries.country_id = States.country_id
          LEFT JOIN Professors P on Users.user_id = P.user_id
          LEFT JOIN Students S on Users.user_id = S.user_id
          LEFT JOIN CourseMentors CM on Users.user_id = CM.user_id;
@@ -31,7 +33,6 @@ ORDER BY IIF(Submissions.grade IS NULL, 1, 0),
 
 
 /* Displays the lessons info */
-
 SELECT Users.name    as ProfessorName,
        Users.surname as ProfessorSurname,
        Subjects.name as SubjectName,
@@ -45,108 +46,52 @@ FROM Lessons
 
 
 /* Hobbies */
-
 SELECT Users.name, Users.surname, Hobbies.name, Hobbies.description
 FROM Users
          INNER JOIN user_hobby_relationships ON user_hobby_relationships.user_id = Users.user_id
          INNER JOIN Hobbies ON Hobbies.hobby_id = user_hobby_relationships.hobby_id
 ORDER BY Hobbies.hobby_id;
 
--- Get all student subjects, attendance at this subject and avg grade
-
-SELECT Students.student_id,
-       CONCAT(U.name, ' ', U.surname) as User_name_surname,
-       C.name                         as student_course,
-       Subjects.name,
-       (
-           SELECT COUNT(*)
-           FROM Lessons
-           WHERE Lessons.subject_id = csr.subject_id
-       )                              as lessons_was,
-       (
-           SELECT COUNT(*)
-           FROM Lessons
-                    INNER JOIN student_lesson_relationships slr on Lessons.lesson_id = slr.lesson_id
-           WHERE Lessons.subject_id = csr.subject_id
-             AND slr.join_datetime < Lessons.end_datetime
-       )                              as was_on_lecture_times,
-       (
-           SELECT AVG(grade)
-           FROM Submissions
-                    INNER JOIN Tasks T on T.task_id = Submissions.task_id
-           WHERE Submissions.student_id = Students.student_id
-       )                              as average_grade
-FROM Students
-         INNER JOIN Users U on Students.user_id = U.user_id
-         INNER JOIN student_course_relationships scr on Students.student_id = scr.student_id
-         INNER JOIN Courses C on scr.course_id = C.course_id
-         INNER JOIN course_subject_relationships csr on C.course_id = csr.course_id
-         LEFT JOIN student_subject_relationships ssr on Students.student_id = ssr.student_id
-         INNER JOIN Subjects on csr.subject_id = Subjects.subject_id OR ssr.subject_id = Subjects.subject_id
-ORDER BY C.name,
-         User_name_surname;
-
--- How many students take subject
-
-SELECT Subjects.name as subject_name,
-       (SELECT COUNT(*)
-        FROM Students
-                 LEFT JOIN student_subject_relationships ssr on Students.student_id = ssr.student_id
-                 LEFT JOIN student_course_relationships scr on Students.student_id = scr.student_id
-                 LEFT JOIN course_subject_relationships csr on scr.course_id = csr.course_id
-        WHERE Subjects.subject_id = csr.subject_id
-           OR Subjects.subject_id = ssr.subject_id
-       )             as student_counter
-FROM Subjects
-ORDER BY student_counter DESC;
-
--- Professors degree distribution on Courses
-
-SELECT Courses.name,
-       (SELECT count(*)
-        FROM Professors
-                 INNER JOIN professor_subject_relationships psr on Professors.professor_id = psr.professor_id
-                 INNER JOIN course_subject_relationships csr on psr.subject_id = csr.subject_id
-                 INNER JOIN professor_degree_relationships pdr on Professors.professor_id = pdr.professor_id
-                 INNER JOIN Degrees on Degrees.degree_id = pdr.degree_id
-        WHERE csr.course_id = Courses.course_id
-          AND Degrees.name LIKE '%Associate%') as associates_count,
-       (SELECT count(*)
-        FROM Professors
-                 INNER JOIN professor_subject_relationships psr on Professors.professor_id = psr.professor_id
-                 INNER JOIN course_subject_relationships csr on psr.subject_id = csr.subject_id
-                 INNER JOIN professor_degree_relationships pdr on Professors.professor_id = pdr.professor_id
-                 INNER JOIN Degrees on Degrees.degree_id = pdr.degree_id
-        WHERE csr.course_id = Courses.course_id
-          AND Degrees.name LIKE '%Bachelor%')  as backelors_count,
-       (SELECT count(*)
-        FROM Professors
-                 INNER JOIN professor_subject_relationships psr on Professors.professor_id = psr.professor_id
-                 INNER JOIN course_subject_relationships csr on psr.subject_id = csr.subject_id
-                 INNER JOIN professor_degree_relationships pdr on Professors.professor_id = pdr.professor_id
-                 INNER JOIN Degrees on Degrees.degree_id = pdr.degree_id
-        WHERE csr.course_id = Courses.course_id
-          AND Degrees.name LIKE '%Master%')    as masters_count,
-       (SELECT count(*)
-        FROM Professors
-                 INNER JOIN professor_subject_relationships psr on Professors.professor_id = psr.professor_id
-                 INNER JOIN course_subject_relationships csr on psr.subject_id = csr.subject_id
-                 INNER JOIN professor_degree_relationships pdr on Professors.professor_id = pdr.professor_id
-                 INNER JOIN Degrees on Degrees.degree_id = pdr.degree_id
-        WHERE csr.course_id = Courses.course_id
-          AND Degrees.name LIKE '%Doctor%')    as doctors_count
-FROM Courses
-ORDER BY (Courses.course_id);
-
 -- Count Students on Street
-
 SELECT street_name,
        (
            SELECT COUNT(*)
            FROM Users
-           INNER JOIN Addresses A on A.address_id = Users.address_id
-           INNER JOIN Streets US on US.street_id = A.street_id
+                    INNER JOIN Addresses A on A.address_id = Users.address_id
+                    INNER JOIN Streets US on US.street_id = A.street_id
            WHERE US.street_name = Streets.street_name
-           ) as users_count
+       ) as users_count
 FROM Streets
 ORDER BY street_name, users_count DESC;
+
+--Count how many professors, students or course mentors is active in percentage
+SELECT CAST((
+                SELECT AVG(IIF(is_active = 1, 1.0, 0))
+                FROM Students
+            ) * 100 as INT) as student,
+       CAST((
+                SELECT AVG(IIF(is_active = 1, 1.0, 0))
+                FROM Professors
+            ) * 100 as INT) as professors,
+       CAST((
+                SELECT AVG(IIF(is_active = 1, 1.0, 0))
+                FROM CourseMentors
+            ) * 100 as INT) as course_mentors
+
+-- Count how many students takes each course
+SELECT C.name, COUNT(*) as count
+FROM Students
+         INNER JOIN student_course_relationships scr on Students.student_id = scr.student_id
+         INNER JOIN Courses C on C.course_id = scr.course_id
+GROUP BY C.name
+ORDER BY count DESC
+
+-- Display student distribution along years
+SELECT study_year,
+       FORMAT(CAST(COUNT(*) as FLOAT) / (
+           SELECT COUNT(*)
+           FROM Students
+       ), 'P') as percentage
+FROM Students
+GROUP BY study_year
+ORDER BY study_year

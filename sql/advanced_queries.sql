@@ -53,17 +53,25 @@ FROM Students
 ORDER BY C.name,
          User_name_surname;
 
--- How many students take subject
-SELECT Subjects.name as subject_name,
-       (SELECT COUNT(*)
-        FROM Students
-                 LEFT JOIN student_subject_relationships ssr on Students.student_id = ssr.student_id
-                 LEFT JOIN student_course_relationships scr on Students.student_id = scr.student_id
-                 LEFT JOIN course_subject_relationships csr on scr.course_id = csr.course_id
-        WHERE Subjects.subject_id = csr.subject_id
-           OR Subjects.subject_id = ssr.subject_id
-       )             as student_counter
-FROM Subjects
+-- How many students take subject and what is avg grade among students in subject
+SELECT *,
+       FORMAT((
+                      CAST(student_counter as FLOAT) / (SELECT COUNT(*) FROM Students WHERE is_active = 1)
+                  ), 'P') as percents_from_over_all
+FROM (SELECT Subjects.name                              as subject_name,
+             (SELECT COUNT(*)
+              FROM Students
+                       LEFT JOIN student_subject_relationships ssr on Students.student_id = ssr.student_id
+                       LEFT JOIN student_course_relationships scr on Students.student_id = scr.student_id
+                       LEFT JOIN course_subject_relationships csr on scr.course_id = csr.course_id
+              WHERE Subjects.subject_id = csr.subject_id
+                 OR Subjects.subject_id = ssr.subject_id
+             )                                          as student_counter,
+             (SELECT AVG(grade)
+              FROM Submissions
+                       INNER JOIN Tasks T on T.task_id = Submissions.task_id
+              WHERE T.subject_id = Subjects.subject_id) as avg_grade
+      FROM Subjects) as snscag
 ORDER BY student_counter DESC;
 
 -- Get subject average attendance

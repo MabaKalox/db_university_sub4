@@ -64,7 +64,7 @@ SELECT street_name,
 FROM Streets
 ORDER BY street_name, users_count DESC;
 
---Count how many professors, students or course mentors is active in percentage
+--Count how many professors, students and course mentors is active in percentage
 SELECT CAST((
                 SELECT AVG(IIF(is_active = 1, 1.0, 0))
                 FROM Students

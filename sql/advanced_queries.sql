@@ -66,17 +66,54 @@ SELECT Subjects.name as subject_name,
 FROM Subjects
 ORDER BY student_counter DESC;
 
--- How many percent of submission for tasks were made in time
-SELECT Subjects.name,
-       FORMAT(
-               AVG(CASE
-                       WHEN S.submission_time < Tasks.deadline THEN 1.0
-                       ELSE 0 END),
-               'P') as percentage
+-- Get subject average attendance
+SELECT name,
+       ROUND((
+                         CAST((
+                             SELECT COUNT(*)
+                             FROM Lessons
+                                      INNER JOIN student_lesson_relationships slr
+                                                 on Lessons.lesson_id = slr.lesson_id and
+                                                    slr.join_datetime < Lessons.end_datetime
+                             WHERE Lessons.subject_id = Subjects.subject_id
+                         ) as FLOAT) / NULLIF(
+                                 ((SELECT COUNT(*) FROM Lessons WHERE Lessons.subject_id = Subjects.subject_id) *
+                                  (SELECT COUNT(*)
+                                   FROM Students
+                                            LEFT JOIN student_subject_relationships ssr
+                                                      on Students.student_id = ssr.student_id
+                                            LEFT JOIN student_course_relationships scr on Students.student_id = scr.student_id
+                                            LEFT JOIN course_subject_relationships csr on scr.course_id = csr.course_id
+                                   WHERE Subjects.subject_id = csr.subject_id
+                                      OR Subjects.subject_id = ssr.subject_id
+                                  ))
+                             , 0)
+                     * 100), 2) as [attendance_%]
 FROM Subjects
-         INNER JOIN Tasks on Subjects.subject_id = Tasks.subject_id
-         INNER JOIN Submissions S on Tasks.task_id = S.task_id
-GROUP BY Subjects.name
-ORDER BY AVG(
-                 IIF(S.submission_time < Tasks.deadline, 1.0, 0.0)
-             ) DESC
+ORDER BY [attendance_%] DESC;
+
+
+-- Get student info with best avg grade on subject
+SELECT Sbj.name                       as sbj_name,
+       avg_sbj_grade                  as max_sbj_grade,
+       CONCAT(U.name, ' ', U.surname) as top_student_name,
+       St.student_id                  as top_student_id
+FROM (SELECT *,
+             RANK() OVER ( PARTITION BY tt2S.subject_id ORDER BY tt2S.avg_sbj_grade DESC) as rank
+      FROM (
+               SELECT student_id, subject_id, AVG(max_grade) as avg_sbj_grade
+               FROM (
+                        SELECT T.task_id,
+                               S.student_id,
+                               T.subject_id,
+                               MAX(S.grade) OVER ( PARTITION BY S.student_id) as max_grade
+                        FROM Tasks T
+                                 INNER JOIN Submissions S on T.task_id = S.task_id
+                    ) as tt1S
+               GROUP BY student_id, subject_id
+           ) as tt2S) as tt3S
+         INNER JOIN Subjects Sbj on tt3S.subject_id = Sbj.subject_id
+         INNER JOIN Students St on St.student_id = tt3S.student_id
+         INNER JOIN Users U on U.user_id = St.user_id
+WHERE tt3S.rank = 1
+ORDER BY tt3S.subject_id;
